@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@1,700&display=swap" rel="stylesheet">
+    <style>
+        .nav-link{
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            color:white;
+            margin-left: 100px;
+        }
+        .navbar-brand{
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            color:white;
+            margin-left: 50px;
+        }
+        .container-fluid{
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            background-color: black;
+            background: rgba(0,0,0,0.8);
+            padding: 10px;
+        }
+        b:hover{
+            color: orange;
+        }
+        img
+        {
+          height: 750px;
+          width: 100%;
+        }
+        #btn-1{
+            background-color: coral;
+            color: white;
+            border-radius: 25px;
+            padding: 20px;
+            border: none;
+            font-size: 10px;
+            font-family: 'IBM Plex Mono', monospace;
+            margin-top: 25px;
+            word-spacing: 4px;
+            width: 120px;
+            margin-bottom: 30px;
+        }
+        .card
+        {
+          box-shadow: 6px 6px 10px 10px rgba(0,0,0,0.2);
+          cursor: pointer;
+          margin-top: 60px;
+
+        }
+        body
+        {
+          background-image: linear-gradient(orange,white,orange); 
+        }
+        .button-62 {
+            background: linear-gradient(to bottom right, #EF4765, #FF9A5A);
+            border: 0;
+            border-radius: 12px;
+            color: #FFFFFF;
+            cursor: pointer;
+            display: inline-block;
+            font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 2.5;
+            outline: transparent;
+            padding: 0 1rem;
+            text-align: center;
+            text-decoration: none;
+            transition: box-shadow .2s ease-in-out;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+            white-space: nowrap;
+          }
+          .button-62:not([disabled]):focus {
+            box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+          }
+          .button-62:not([disabled]):hover {
+            box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+          }
+          .cards{
+            display: flex;
+            justify-content: space-around;
+          }
+          .cards1{
+            display: flex;
+            justify-content: space-around;
+          }
+          .navbar-scroll .nav-link,
+          .navbar-scroll .navbar-toggler-icon,
+          .navbar-scroll .navbar-brand {
+            color: #fff;
+          }
+
+          /* Color of the links AFTER scroll */
+          .navbar-scrolled .nav-link,
+          .navbar-scrolled .navbar-toggler-icon,
+          .navbar-scrolled .navbar-brand {
+            color: #fff;
+          }
+
+          /* Color of the navbar AFTER scroll */
+          .navbar-scroll,
+          .navbar-scrolled {
+            background-color:lightslategray;
+          }
+
+          .mask-custom {
+            backdrop-filter: blur(5px);
+            background-color: rgba(255, 255, 255, .20);
+          }
+
+          .navbar-brand {
+            font-size: 1.75rem;
+            letter-spacing: 3px;
+          }
+    </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top mask-custom shadow-0">
+    <div class="container">
+      <a class="navbar-brand" href="#!"><span style="color:orange;font-size: 35px;">MAKE_</span><span style="color: #fff;font-size: 30px;">CODE_</span></a>
+      <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+        data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#!" style="color: orange;">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#!"  style="color: black;" >ABOUT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#!"  style="color: orange;">SERVICES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#!" style="color: black;">PORTFOLIO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#!" style="color: orange;">BLOG</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#!"  style="color: black;">CONTACT</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav d-flex flex-row">
+          <li class="nav-item me-3 me-lg-0">
+            <a class="nav-link" href="#!">
+              <i class="fas fa-shopping-cart"></i>
+            </a>
+          </li>
+          <li class="nav-item me-3 me-lg-0">
+            <a class="nav-link" href="#!">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+          <li class="nav-item me-3 me-lg-0">
+            <a class="nav-link" href="#!">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" >
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicatrs" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner" >
+          <div class="carousel-item active">
+            <img src="/Image/photo (2).jpg" class="d-block w-100" alt="..."style="filter:brightness(50%);">
+            <div class="carousel-caption d-none d-md-block">
+                <span style="font-size: 22px; word-spacing: 8px;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">W E L C O M E </span>    <span style="font-size: 22px;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; word-spacing: 8px;">T  O</span>
+                <br>
+                <b style="font-size: 160px;">IT WORLD</b>
+                <br>
+                <span style="font-size: 25px; color: greenyellow;">Web Design,</span>  <span style="font-size: 25px; color: green;">Development</span>  <span style="font-size: 25px;">&</span>  <span style="font-size: 25px;color: orange;">Branding</span>
+                <br><br>
+                <button class="button-62" role="button" style="margin-bottom: 20px; margin-top: 20px;">Get Started</button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="/Image/photo (1).jpg" class="d-block w-100" alt="..."style="filter:brightness(50%);">
+            <div class="carousel-caption d-none d-md-block">
+              <h2 style="font-size: 60px; margin-bottom: 120px;font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;color:white;">“Building apps that redefine possibilities”</h2>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="/Image/photo (4).jpg" class="d-block w-100" alt="..."style="filter:brightness(50%);">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <br><br>
+      <center>
+        <div class="card mb-3" style="max-width: 900px;height:290px;">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="/Image/card2.jpg" class="img-fluid rounded-start" alt="..." style="height: 288px;border-radius: 6px;">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title" style="font-size: 28px;padding: 2px;">What We Do ?</h5>
+                <h6 class="card-subtitle " style="padding: 2px;">About Us</h6>
+                <p class="card-text"  style="padding: 2px;">In a world where the only constant is change, our mission is to harness the power of technology to solve real-world challenges, simplify complex processes, and enhance lives. We believe that technology is a force for good, capable of reshaping industries, driving progress, and making the seemingly impossible, possible.</p>
+                <button class="button-62" role="button">Get Started</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </center>
+      <center>
+        <h1 style="margin-top: 120px; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-size: 50px;">Our Services</h1>
+        <br>
+        <p style="margin-left: 110px; margin-right: 110px; font-size: 18px; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;" >"At MAKE_CODE_, we offer a comprehensive range of software development services tailored to meet your unique business needs. With our team of highly skilled and experienced developers, we specialize in crafting cutting-edge software solutions that drive innovation and efficiency. Our services encompass full-cycle software development, from concept and design to development, testing, deployment, and ongoing maintenance. We excel in web and mobile app development, custom software solutions, and software integration, helping businesses across various industries optimize their operations and reach their goals. We are dedicated to delivering high-quality, scalable, and secure software products that not only meet but exceed your expectations. Our commitment to client satisfaction, combined with our technical expertise, makes us the perfect partner for your software development needs."</p>
+      </center>
+      <br><br>
+      <div class="cards">
+
+      <div class="card" style="width: 18rem; height: 510px;">
+        <img src="/Image/android.jpg" class="card-img-top" alt="..." style="height: 300px;">
+        <div class="card-body">
+          <center>
+            <h5 class="card-title">Android App</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-outline-success">Check Out</a>
+          </center>
+        </div>
+      </div>
+      
+
+      <div class="card" style="width: 18rem; height: 510px;">
+        <img src="/Image/web development.jpg" class="card-img-top" alt="..." style="height: 300px;">
+        <div class="card-body">
+          <center>
+            <h5 class="card-title">Web Development</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-outline-primary ">Check Out</a>
+          </center>
+        </div>
+      </div>
+
+
+      <div class="card" style="width: 18rem; height: 510px;">
+        <img src="/Image/datascience.jpg" class="card-img-top" alt="..." style="height: 300px;">
+        <div class="card-body">
+          <center>
+            <h5 class="card-title">Data Science</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-outline-danger ">Check Out</a>
+          </center>
+        </div>
+      </div>
+
+
+      <div class="card" style="width: 18rem; height: 510px;" hidden >
+        <img src="..." class="card-img-top" alt="..." style="height: 300px;">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="cards1">
+
+      <div class="card" style="width: 18rem;height: 510px;">
+        <img src="/Image/BRANDING.jpg" class="card-img-top" alt="..." style="height: 300px";>
+        <div class="card-body">
+          <center>
+            <h5 class="card-title">BRANDING</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-outline-info   ">Check Out</a>
+          </center>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;height: 510px;">
+        <img src="/Image/ECOMMERCE.jpg" class="card-img-top" alt="..." style="height: 300px;">
+        <div class="card-body">
+          <center>
+            <h5 class="card-title">E-Commerce</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-outline-warning  ">Check Out</a>
+          </center>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;height: 510px;" >
+        <img src="/Image/SEO.jpg" class="card-img-top" alt="..." style="height: 300px";  >
+        <div class="card-body">
+          <center>
+            <h5 class="card-title">SEO</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-outline-dark  ">Check Out</a>
+          </center>
+        </div>
+      </div> 
+    </div>
+    <br><br><br><br><br>
+    <br><br><br><br><br>
+    <br>
+    <center>
+      <caption>Created By Marut Sharma</caption>
+      <br>
+      <caption>All Right Reserved</caption>
+      <caption>© MAKE_CODE_.com</caption>
+    </center>
+    <br>
+</body>
+</html>
